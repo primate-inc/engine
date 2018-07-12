@@ -8703,7 +8703,7 @@ wysihtml5.dom.parse = function(elementOrHtml_current, config_current) {
     // Insert new DOM tree
     element.appendChild(fragment);
 
-    return isString ? wysihtml5.quirks.getCorrectInnerHTML(element) : element;
+    return elementOrHtml //return isString ? wysihtml5.quirks.getCorrectInnerHTML(element) : element;
   }
 
   function _convert(oldNode, cleanUp, clearInternals, uneditableClass) {
